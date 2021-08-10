@@ -10,6 +10,8 @@ module.exports = class extends Generator {
     super(args, opts);
 
     this.option('overwrite'); // This method adds support for a `--overwrite` flag
+
+    this.showForm()
   }
 
   showForm() {
