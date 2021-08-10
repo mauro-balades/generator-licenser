@@ -1,5 +1,5 @@
 {
-  "name": "generator-glicense",
+  "name": "generator-licenser",
   "version": "1.0.0",
   "description": "licenser - create licenses for your projects with high-level UI",
   "main": "app/index.js",
@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maubg-debug/licenser.git"
+    "url": "git+https://github.com/maubg-debug/generator-licenser.git"
   },
   "keywords": [
     "yeoman-generator"
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maubg-debug/licenser/issues"
+    "url": "https://github.com/maubg-debug/generator-licenser/issues"
   },
-  "homepage": "https://github.com/maubg-debug/licenser#readme",
+  "homepage": "https://github.com/maubg-debug/generator-licenser#readme",
   "dependencies": {
     "ink-form": "^1.0.1",
     "yeoman-generator": "^5.4.0"
