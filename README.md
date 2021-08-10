@@ -1,2 +1,2 @@
-# glicense
-glicense - create licenses for your projects with high-level UI
+# licenser
+licenser - create licenses for your projects with high-level UI

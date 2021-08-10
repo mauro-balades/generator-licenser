@@ -1,0 +1,29 @@
+{
+  "name": "licenser",
+  "version": "1.0.0",
+  "description": "licenser - create licenses for your projects with high-level UI",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maubg-debug/licenser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maubg-debug/licenser/issues"
+  },
+  "homepage": "https://github.com/maubg-debug/licenser#readme",
+  "dependencies": {
+    "yeoman-generator": "^5.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "app"
+  ]
+}
