@@ -4,7 +4,7 @@
   "description": "licenser - create licenses for your projects with high-level UI",
   "main": "app/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/test.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/maubg-debug/licenser#readme",
   "dependencies": {
+    "ink-form": "^1.0.1",
     "yeoman-generator": "^5.4.0"
   },
   "files": [
