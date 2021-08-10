@@ -1,6 +1,6 @@
 {
   "name": "generator-licenser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "licenser - create licenses for your projects with high-level UI",
   "main": "app/index.js",
   "scripts": {
