@@ -1,4 +1,5 @@
 var Generator = require('yeoman-generator');
+var clearTerminal = require("clear-terminal")
 const { form } = require('./form');
 
 module.exports = class extends Generator {
@@ -10,13 +11,12 @@ module.exports = class extends Generator {
     super(args, opts);
 
     this.option('overwrite'); // This method adds support for a `--overwrite` flag
-
-    this.showForm()
   }
 
-  showForm() {
-    form((res) => {
-      this.data = res;
-    })
+  async init() {
+    clearTerminal()
+    this.data = await form()
+    clearTerminal()
+    console.log(this.data)
   }
 };

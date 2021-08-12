@@ -237,6 +237,14 @@ ci-info@^2.0.0:
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
   integrity sha512-5tK7EtrZ0N+OLFMthtqOj4fI2Jeb88C4CAZPu25LDVUgXJ0A3Js4PMGqrn0JU1W0Mh1/Z8wZzYPxqUrXeBboCQ==
 
+clear-terminal@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/clear-terminal/-/clear-terminal-0.0.2.tgz#45e1237ce8c452d1179a6e24b78f4784e1905541"
+  integrity sha1-ReEjfOjEUtEXmm4kt49HhOGQVUE=
+  dependencies:
+    control-sequence-introducer "0.0.2"
+    terminal-escape-char "0.0.1"
+
 cli-boxes@^2.2.0:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/cli-boxes/-/cli-boxes-2.2.1.tgz#ddd5035d25094fce220e9cab40a45840a440318f"
@@ -292,6 +300,13 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
+
+control-sequence-introducer@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/control-sequence-introducer/-/control-sequence-introducer-0.0.2.tgz#14ecaf9eadca271632fa29dfb5be4a0893735465"
+  integrity sha1-FOyvnq3KJxYy+inftb5KCJNzVGU=
+  dependencies:
+    terminal-escape-char "*"
 
 convert-to-spaces@^1.0.1:
   version "1.0.2"
@@ -996,6 +1011,16 @@ supports-color@^7.1.0:
   integrity sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
   dependencies:
     has-flag "^4.0.0"
+
+terminal-escape-char@*:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/terminal-escape-char/-/terminal-escape-char-0.0.4.tgz#593cd964acca6735f701a57da7665c70b8f122b0"
+  integrity sha1-WTzZZKzKZzX3AaV9p2ZccLjxIrA=
+
+terminal-escape-char@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/terminal-escape-char/-/terminal-escape-char-0.0.1.tgz#2115e8ab99dec89e355e1bd35a66ea5df6dde182"
+  integrity sha1-IRXoq5neyJ41XhvTWmbqXfbd4YI=
 
 text-table@^0.2.0:
   version "0.2.0"

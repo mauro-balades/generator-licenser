@@ -1,6 +1,6 @@
 var {openForm} = require('ink-form');
 
-exports.form = (cb) => {
+exports.form = async () => {
   const licenses = [
     { name: 'Apache 2.0', value: 'Apache-2.0' },
     { name: 'MIT', value: 'MIT' },
@@ -43,8 +43,6 @@ exports.form = (cb) => {
     },
   };
 
-  (async () => {
-    const result = await openForm(form);
-    cb(result)
-  })();
+  const result = await openForm(form);
+  return result
 }
