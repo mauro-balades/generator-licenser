@@ -1,6 +1,6 @@
 {
   "name": "generator-licenser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "licenser - create licenses for your projects with high-level UI",
   "main": "app/index.js",
   "scripts": {
@@ -20,6 +20,8 @@
   "homepage": "https://github.com/maubg-debug/generator-licenser#readme",
   "dependencies": {
     "clear-terminal": "^0.0.2",
+    "generator-licenser": "^1.0.2",
+    "global": "^4.4.0",
     "ink-form": "^1.0.1",
     "yeoman-generator": "^5.4.0"
   },
