@@ -4,8 +4,6 @@ const { form } = require('./form');
 
 module.exports = class extends Generator {
 
-  static data = null;
-
   constructor(args, opts) {
     // Calling the super constructor is important so our generator is correctly set up
     super(args, opts);
@@ -13,10 +11,18 @@ module.exports = class extends Generator {
     this.option('overwrite'); // This method adds support for a `--overwrite` flag
   }
 
-  async init() {
-    clearTerminal()
-    this.data = await form()
-    clearTerminal()
-    console.log(this.data)
+  initializing() {
+    this.gitc = {
+      user: {
+        name: this.user.git.name(),
+        email: this.user.git.email()
+      }
+    };
   }
+
+  async prompt() {
+    this.data = form(this.gitc)
+  }
+
+  
 };

@@ -1,6 +1,6 @@
 var {openForm} = require('ink-form');
 
-exports.form = async () => {
+exports.form = async (default_info) => {
   const licenses = [
     { name: 'Apache 2.0', value: 'Apache-2.0' },
     { name: 'MIT', value: 'MIT' },
@@ -15,6 +15,8 @@ exports.form = async () => {
     { name: 'No License (Copyrighted)', value: 'UNLICENSED' }
   ];
 
+  const { user } = default_info;
+
   const mardown = [
     {name: 'yes', value: true},
     {name: 'no', value: false}
@@ -27,8 +29,8 @@ exports.form = async () => {
         {
           title: 'basic info',
           fields: [
-            { type: 'string', name: 'name', label: 'What\'s your name?', required: true },
-            { type: 'string', name: 'email', label: 'Your email (optional)', initalValue: 'null' },
+            { type: 'string', name: 'name', label: 'What\'s your name?', required: user.name ? false : true },
+            { type: 'string', name: 'email', label: 'Your email (optional)', initalValue: user.email || 'null' },
             { type: 'string', name: 'website', label: 'Your website (optional)', initalValue: 'null' },
             { type: 'select', name: 'license', label: 'Select license', options: licenses, required: true },
           ],
@@ -42,6 +44,9 @@ exports.form = async () => {
       ],
     },
   };
+
+  if (user.name)
+    form.form.sections[0].fields[0].initalValue = user.name
 
   const result = await openForm(form);
   return result
